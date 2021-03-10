@@ -1,3 +1,35 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+home:
+    path: /
+    controller: App\Controller\HomeController::home
+    
+contact:
+    path: /contact
+    controller: App\Controller\HomeController::contact
+
+catalogue:
+    path: /catalogue
+    controller: App\Controller\CategoryController::category
+
+cart_index:
+    path: /panier
+    controller: App\Controller\CartController::index
+
+product:
+    path: /product
+    controller: App\Controller\ProductController::product
+
+detail:
+    path: /product/{id}
+    controller: App\Controller\ProductController::detail
+
+user:
+    path: /user
+    controller: App\Controller\UserController::index
+
+app_register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
